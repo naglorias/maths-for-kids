@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ephesis", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 1em;
+}
+p {
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  padding: 1rem;
+}
+
+img {
+  width: 80px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #b3e283;
+  color: #ff7600;
+}
+
+.title {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title h1 {
+  font-size: 2em;
+  font-family: "Permanent Marker", cursive;
+}
+
+.nav-menu li a {
+  font-size: 1.5em;
+  color: #ff7600;
+  font-family: "Permanent Marker", cursive;
+  font-weight: bolder;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 5px;
+  bottom: 0.5rem;
+  left: 0;
+  background: #fff;
+  transition: width 0.5s ease-in-out;
+}
+
+.nav-menu li:hover::after {
+  width: 100%;
+}
+.nav-menu a:hover {
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-answer {
+  width: 1000px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.process {
+  width: 100%;
+  height: 70%;
+  background: url(https://image.freepik.com/free-photo/green-slate_1205-377.jpg?1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.answers {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+.answers > div {
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  background-color: #ffef78;
+  text-align: center;
+  font-size: 4em;
+  border: 0.4rem solid #b24080;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#calculation {
+  font-family: "Permanent Marker", cursive;
+  font-size: 7em;
+  width: 50%;
+  color: #fff;
+  text-align: center;
+  margin: 8rem auto;
+}
